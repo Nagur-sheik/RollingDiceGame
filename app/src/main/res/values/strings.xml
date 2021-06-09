@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RollingDiceGame</string>
+    <string name="game_result" />
+    <string name="todo" />
+    <string name="computer" />
+    <string name="todo2" />
+    <string name="user" />
+</resources>

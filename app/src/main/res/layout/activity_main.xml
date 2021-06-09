@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon.CenterStacked"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/gameresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/game_result"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/computer"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Computer"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/dicecomputer"
+                android:layout_width="wrap_content"
+                android:layout_height="227dp"
+                android:contentDescription="@string/todo"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:src="@drawable/dice1">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/diceuser"
+                android:layout_width="wrap_content"
+                android:layout_height="213dp"
+                android:contentDescription="@string/todo2"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:src="@drawable/dice3">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="User"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/lowerbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="lower"
+            android:textSize="15sp"
+            app:backgroundTint="#000000">
+
+        </Button>
+
+        <Button
+            android:id="@+id/higherbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="higher"
+            android:textSize="15sp"
+            app:backgroundTint="#050202">
+
+        </Button>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
